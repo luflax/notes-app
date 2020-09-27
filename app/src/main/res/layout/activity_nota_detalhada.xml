@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.notasApp.ui.notaDetalhada.NotaDetalhadaViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.notaDetalhada.NotaDetalhadaActivity"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:background="@drawable/gradient">
+
+        <EditText
+            android:id="@+id/editTextTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:autofillHints=""
+            android:textSize="40sp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="@drawable/edit_text_hint_color"
+            android:text="@={viewModel.nota.titulo}"
+            android:hint="@string/titulo"
+            android:inputType="textCapSentences|textVisiblePassword" />
+
+        <EditText
+            android:id="@+id/editTextNota"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:autofillHints=""
+            android:textColor="#FFFFFF"
+            android:textColorHint="@drawable/edit_text_hint_color"
+            android:text="@={viewModel.nota.texto}"
+            android:hint="@string/escreva_sua_nota_aqui"
+            android:textSize="20sp"
+            android:inputType="textMultiLine|textCapSentences|textNoSuggestions"
+            android:textAlignment="center"
+            android:background="#00000000"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:onClick="@{(view) -> viewModel.salvar(view)}"
+            android:text="@string/salvar"
+            android:background="#2EBAEE"
+            android:textColor="#FFFFFF"
+            android:layout_margin="30dp"/>
+
+    </LinearLayout>
+</layout>
