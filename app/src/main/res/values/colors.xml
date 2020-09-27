@@ -3,4 +3,7 @@
     <color name="colorPrimary">#FFFFFF</color>
     <color name="colorPrimaryDark">#46529D</color>
     <color name="colorAccent">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="aqua">#2EBAEE</color>
+    <color name="invisible">#00000000</color>
 </resources>

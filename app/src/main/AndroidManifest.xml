@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.notasApp.ui.notaDetalhada.NotaDetalhadaActivity" />
-        <activity android:name="com.example.notasApp.ui.notas.NotasActivity">
+        <activity android:name="com.example.notasApp.ui.detailedNote.DetailedNoteActivity" />
+        <activity android:name="com.example.notasApp.ui.notas.NotesActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

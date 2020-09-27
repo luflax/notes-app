@@ -5,46 +5,46 @@
     <data>
         <variable
             name="viewModel"
-            type="com.example.notasApp.ui.notaDetalhada.NotaDetalhadaViewModel" />
+            type="com.example.notasApp.ui.detailedNote.DetailedNoteViewModel" />
     </data>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".ui.notaDetalhada.NotaDetalhadaActivity"
+        tools:context=".ui.detailedNote.DetailedNoteActivity"
         android:focusableInTouchMode="true"
         android:focusable="true"
         android:background="@drawable/gradient">
 
         <EditText
-            android:id="@+id/editTextTitulo"
+            android:id="@+id/editTextTitle"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:textAlignment="center"
             android:autofillHints=""
             android:textSize="40sp"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
             android:textColorHint="@drawable/edit_text_hint_color"
-            android:text="@={viewModel.nota.titulo}"
-            android:hint="@string/titulo"
+            android:text="@={viewModel.note.title}"
+            android:hint="@string/title"
             android:inputType="textCapSentences|textVisiblePassword" />
 
         <EditText
-            android:id="@+id/editTextNota"
+            android:id="@+id/editTextNote"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="8"
             android:autofillHints=""
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
             android:textColorHint="@drawable/edit_text_hint_color"
-            android:text="@={viewModel.nota.texto}"
-            android:hint="@string/escreva_sua_nota_aqui"
+            android:text="@={viewModel.note.title}"
+            android:hint="@string/write_your_note_here"
             android:textSize="20sp"
             android:inputType="textMultiLine|textCapSentences|textNoSuggestions"
             android:textAlignment="center"
-            android:background="#00000000"
+            android:background="@color/invisible"
             />
 
         <Button
@@ -52,10 +52,10 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:textSize="20sp"
-            android:onClick="@{(view) -> viewModel.salvar(view)}"
-            android:text="@string/salvar"
-            android:background="#2EBAEE"
-            android:textColor="#FFFFFF"
+            android:onClick="@{(view) -> viewModel.save(view)}"
+            android:text="@string/save"
+            android:background="@color/aqua"
+            android:textColor="@color/white"
             android:layout_margin="30dp"/>
 
     </LinearLayout>

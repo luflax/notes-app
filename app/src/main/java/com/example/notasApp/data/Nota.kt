@@ -1,8 +1,8 @@
 package com.example.notasApp.data
 
-data class Nota(var texto: String, var titulo: String)  {
+data class Note(var text: String, var title: String)  {
 
     override fun toString(): String {
-        return "$titulo - $texto"
+        return "$title - $text"
     }
 }

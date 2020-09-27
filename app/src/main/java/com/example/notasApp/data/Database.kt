@@ -2,7 +2,7 @@ package com.example.notasApp.data
 
 class Database private constructor(){
 
-    var notaDao = NotaDao()
+    var noteDao = NoteDao()
         private set
 
     companion object{

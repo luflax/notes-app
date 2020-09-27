@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.notas.NotasActivity"
+    tools:context=".ui.notas.NotesActivity"
     android:background="@drawable/gradient">
 
     <ListView
@@ -14,15 +14,15 @@
         android:layout_weight="10" />
 
     <Button
-        android:id="@+id/buttonAddNota"
+        android:id="@+id/buttonAddNote"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:textSize="20sp"
-        android:background="#2EBAEE"
-        android:textColor="#FFFFFF"
+        android:background="@color/aqua"
+        android:textColor="@color/white"
         android:layout_margin="30dp"
-        android:text="@string/adicionar_nota" />
+        android:text="@string/add_note" />
 
 
 </LinearLayout>

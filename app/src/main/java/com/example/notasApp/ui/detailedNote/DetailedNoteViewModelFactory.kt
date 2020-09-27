@@ -1,14 +1,14 @@
-package com.example.notasApp.ui.notas
+package com.example.notasApp.ui.detailedNote
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.notasApp.data.NotaRepository
+import com.example.notasApp.data.NoteRepository
 
-class NotasViewModelFactory(private val notasRepository: NotaRepository) :
+class DetailedNoteViewModelFactory(private val noteRepository: NoteRepository) :
     ViewModelProvider.NewInstanceFactory() {
 
     @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-        return NotasViewModel(notasRepository) as T
+        return DetailedNoteViewModel(noteRepository) as T
     }
 }
