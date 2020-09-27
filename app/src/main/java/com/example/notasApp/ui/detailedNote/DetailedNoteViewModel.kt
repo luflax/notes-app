@@ -8,7 +8,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.notasApp.data.Note
 import com.example.notasApp.data.NoteRepository
-import com.example.notasApp.ui.notas.NotesActivity
+import com.example.notasApp.ui.notes.NotesActivity
 
 
 class DetailedNoteViewModel(private val noteRepository: NoteRepository) : ViewModel() {

@@ -3,7 +3,7 @@ package com.example.notasApp.utils
 import com.example.notasApp.data.Database
 import com.example.notasApp.data.NoteRepository
 import com.example.notasApp.ui.detailedNote.DetailedNoteViewModelFactory
-import com.example.notasApp.ui.notas.NotesViewModelFactory
+import com.example.notasApp.ui.notes.NotesViewModelFactory
 
 object InjectionUtils {
 
