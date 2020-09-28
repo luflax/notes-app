@@ -39,7 +39,7 @@
             android:autofillHints=""
             android:textColor="@color/white"
             android:textColorHint="@drawable/edit_text_hint_color"
-            android:text="@={viewModel.note.title}"
+            android:text="@={viewModel.note.text}"
             android:hint="@string/write_your_note_here"
             android:textSize="20sp"
             android:inputType="textMultiLine|textCapSentences|textNoSuggestions"
